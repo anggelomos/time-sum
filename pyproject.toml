@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "time-sum"
+version = "0.1.0"
+description = "A small Python script for time summation"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{include = "time_sum"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+
+[tool.poetry.group.dev.dependencies]
+pyinstaller = "^6.0.0"
+
+[tool.poetry.scripts]
+timesum = "time_sum.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
