@@ -26,10 +26,13 @@ def process_time(input_time: str) -> float:
     return processed_time
 
 print("Enter the times and press enter after each one. Press . to finish.")
+print("Enter * to clear the total time.")
     
 while input_value != ".":
-
-    if input_value:
+    if input_value == "*":
+        total_time = 0
+    
+    elif input_value:
         total_time += process_time(input_value)
         print(f"  ={total_time}")
 

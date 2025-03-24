@@ -34,7 +34,7 @@ To create a standalone executable that can be run without Python installed:
 3. Navigate to the project directory
 4. Run PyInstaller with the following command:
    ```
-   pyinstaller --onefile --name time_sum app.py
+   pyinstaller --onefile --name time_calculator app.py
    ```
 
 5. Find the executable in the `dist` directory
